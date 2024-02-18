@@ -1,0 +1,98 @@
+/* Mobile first */
+/* GENERAL */
+:root {
+    /* ### Primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    /* ### Accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    /* ### Neutral */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* UTILITY CLASSES */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WEBSITE */
+/* Header */
+/* Navbar */
+header {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2em 1em;
+    margin-bottom: 2em;
+}
+
+header nav {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+nav img {
+    width: 80px;
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1em;
+    font-size: .9rem;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    display: grid;
+    row-gap: 1.5em;
+}
+
+.hero-text-container {
+    text-align: center;
+}
+
+.hero-text-container h1 {
+    color: var(--very-dark-blue);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-bottom: 1.5em;
+}
+
+.hero-text-container p {
+    color: var(--very-dark-blue);
+}
+
+.hero form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero form input {
+    padding: .8em 1.5em;
+    margin-bottom: 1em;
+}
+
+.hero form button {
+    border-radius: 4px;
+    background-color: var(--bright-blue);
+    color: #fff;
+    padding: .8em 0;
+}
+/* End of Header */
+
+/* Main */

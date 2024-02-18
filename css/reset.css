@@ -94,3 +94,7 @@ a, button {
     all: unset;
     cursor: pointer;
 }
+
+ul, ol {
+    list-style: none;
+}
