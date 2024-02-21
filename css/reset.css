@@ -90,11 +90,14 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex;
 }
 
-a, button {
+a,
+button,
+input {
     all: unset;
     cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
