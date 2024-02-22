@@ -94,7 +94,6 @@ a,
 button,
 input {
     all: unset;
-    cursor: pointer;
 }
 
 ul,
