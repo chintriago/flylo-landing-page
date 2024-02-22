@@ -252,8 +252,8 @@ main {
 }
 
 .main-bottom form {
-    row-gap: .5em;
-    width: 75%;
+    row-gap: .65em;
+    width: 80%;
 }
 
 .main-bottom form input {
