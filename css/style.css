@@ -365,6 +365,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 2em;
+        margin-top: 4em;
     }
 
     .hero picture {
@@ -450,9 +451,10 @@ footer {
 
     .main-text-container h2 {
         width: 100%;
-        display: inline;
+        display: block;
         text-align: initial;
-        font-size: 3vw;
+        white-space: nowrap;
+        font-size: 2.5rem;
         margin-bottom: 1em;
     }
 
