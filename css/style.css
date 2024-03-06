@@ -255,6 +255,10 @@ main {
     row-gap: 2em;
 }
 
+.main-bottom-text h4 {
+    margin-bottom: 2em;
+}
+
 .main-bottom form {
     row-gap: .65em;
     width: 80%;
@@ -331,7 +335,7 @@ footer {
 }
 
 /* EXPERIMENTAL */
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 650px) and (max-width: 1023px) {
 
     .hero,
     .main-text-container,
@@ -343,12 +347,16 @@ footer {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
     /* HEADER */
     header {
         height: 100vh;
         padding: 4em 4em 0;
+    }
+    /* header nav section */
+    header nav {
+        height: 10%;
     }
 
     header nav img {
@@ -361,11 +369,18 @@ footer {
         font-size: 1.25rem;
     }
 
+    /* header hero section */
+    .hero-wrapper {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hero {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         column-gap: 2em;
-        margin-top: 4em;
     }
 
     .hero picture {
@@ -416,6 +431,7 @@ footer {
     }
 
     /* MAIN */
+    /* main top section */
     .main-top {
         width: 100%;
         display: flex;
@@ -451,14 +467,30 @@ footer {
 
     .main-text-container h2 {
         width: 100%;
-        display: block;
+        display: inline;
         text-align: initial;
-        white-space: nowrap;
-        font-size: 2.5rem;
+        font-size: 3vw;
         margin-bottom: 1em;
     }
 
     .main-card-container {
         margin: 0 auto 0 0;
+    }
+
+    /* main bottom section */
+    .main-bottom {
+        flex-direction: row;
+        row-gap: initial;
+        column-gap: 8em;
+        padding: 5em;
+    }
+
+    .main-bottom-text {
+        padding: 1em;
+        text-align: left;
+    }
+
+    .main-bottom form {
+        padding: 1em;
     }
 }
