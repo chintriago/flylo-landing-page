@@ -352,20 +352,24 @@ footer {
     /* HEADER */
     header {
         height: 90vh;
-        padding: 4em 4em 0;
+        padding: 4em 6em 0;
     }
 
     /* header nav section */
+    header nav {
+        margin-bottom: 0;
+    }
 
     header nav img {
         margin: auto 0;
         width: 180px;
         height: 60px;
+        margin-bottom: 0;
     }
 
     header nav ul {
         padding-right: 3em;
-        column-gap: 3em;
+        column-gap: 4em;
         font-size: 1.15rem;
     }
 
@@ -389,8 +393,7 @@ footer {
     }
 
     .hero picture img {
-        width: 90%;
-        margin: auto;
+        width: 100%;
     }
 
     .text-grid-item {
@@ -443,7 +446,7 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         column-gap: 0;
-        padding: 6em 4em;
+        padding: 6em;
     }
 
     .main-top picture {
@@ -490,7 +493,7 @@ footer {
         flex-direction: row;
         row-gap: initial;
         column-gap: 8em;
-        padding: 5em;
+        padding: 6em;
     }
 
     .main-bottom-text {
