@@ -288,12 +288,14 @@ main {
 
 /* FOOTER */
 footer {
+    width: 100%;
     background-color: var(--very-dark-blue);
     color: white;
     width: 100%;
     margin: 0 auto;
     padding: 3em 2em 2em;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 2em;
 }
 
@@ -359,7 +361,7 @@ footer {
 
     /* header nav section */
     header nav {
-        margin-bottom: 0;
+        margin-bottom: 3em;
     }
 
     header nav img {
@@ -512,6 +514,7 @@ footer {
 
     .main-bottom form button {
         width: 40%;
+        min-width: 185px;
         align-self: flex-start;
         padding: .15em;
     }
@@ -523,5 +526,38 @@ footer {
 
     .main-bottom-text p {
         padding-right: 4em;
+    }
+    /* FOOTER */
+    footer {
+        flex-direction: row;
+        row-gap: 0;
+        justify-content: space-evenly;
+        padding: 6em 6em 3em;
+    }
+
+    .footer-1 {
+        width: 33%;
+    }
+
+    .footer-2 {
+        width: 33%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4em;
+    }
+
+    .footer-2 ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-2 ul:nth-of-type(1) {
+        margin-bottom: 2.5em;
+    }
+
+    .footer-3 {
+        width: 33%;
+        justify-content: flex-start;
+        padding-top: 4em;
     }
 }
