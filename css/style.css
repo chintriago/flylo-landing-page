@@ -31,6 +31,7 @@ li {
     font-family: 'Raleway', sans-serif;
 }
 
+/* LINKS */
 i,
 a,
 button,
@@ -79,14 +80,14 @@ li:hover {
 }
 
 /* WEBSITE */
-/* Header */
+/* HEADER */
 header {
     width: 100%;
     padding: 2em 1em 5em;
     margin: 0 auto;
 }
 
-/* Nav */
+/* HEADER Nav */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -108,7 +109,7 @@ header nav ul {
     font-weight: 500;
 }
 
-/* Hero */
+/* HEADER HERO */
 .hero {
     display: grid;
     row-gap: 1.5em;
@@ -155,28 +156,28 @@ header nav ul {
     width: 100%;
     height: 50px;
 }
+/* END OF HEADER. */
+
+/* PICTURE CURVE */
 
 .bg-curve {
     width: 100%;
     height: 70px;
 }
 
-
 .bg-curve img {
     width: 100%;
     height: 100%;
 }
 
-/* End of Header. */
-
-
-/* Main */
+/* MAIN */
 main {
     min-height: 100vh;
     width: 100%;
     margin: 0 auto;
 }
 
+/* MAIN TOP */
 .main-top {
     background-color: var(--light-grayish-blue);
 }
@@ -186,7 +187,6 @@ main {
     margin-bottom: 4em;
 }
 
-/* main top */
 .main-top-text {
     padding: 0 1em 4em;
 }
@@ -226,7 +226,7 @@ main {
     font-weight: 500;
 }
 
-/* main top card */
+/* MAIN TOP CARD */
 .main-card-container {
     align-items: flex-start;
     row-gap: 1em;
@@ -272,7 +272,7 @@ main {
     font-weight: 500;
 }
 
-/* main bottom */
+/* MAIN BOTTOM */
 .main-bottom {
     width: 100%;
     background-color: var(--desaturated-blue);
@@ -322,6 +322,7 @@ main {
     font-size: .8rem;
     font-weight: 600;
 }
+/* END OF MAIN */
 
 /* FOOTER */
 footer {
@@ -376,9 +377,10 @@ footer {
     width: 30px; 
 }
 
-/* EXPERIMENTAL */
-@media screen and (min-width: 650px) and (max-width: 1023px) {
+/* MEDIA QUERIES */
 
+/* 650PX - 1023PX */
+@media screen and (min-width: 650px) and (max-width: 1023px) {
     .hero,
     .main-text-container,
     .main-top picture,
@@ -389,15 +391,15 @@ footer {
     }
 }
 
+/* 1024PX AND UP */
 @media screen and (min-width: 1024px) {
-
     /* HEADER */
     header {
         height: 90vh;
         padding: 4em 6em 0;
     }
 
-    /* header nav section */
+    /* hEADER NAV*/
     header nav {
         margin-bottom: 3em;
     }
@@ -415,7 +417,7 @@ footer {
         font-size: 1.15rem;
     }
 
-    /* header hero section */
+    /* HEADER HERO */
     .hero-container {
         height: 80%;
         display: flex;
@@ -484,14 +486,16 @@ footer {
     .hero form button {
         width: 40%;
     }
+    /* END OF HEADER */
 
+    /* PICTURE CURVE */
     .bg-curve {
         height: 100px;
     }
+    /* END OF PICTURE CURVE */
 
     /* MAIN */
-    /* main top section */
-
+    /* MAIN TOP */
     .main-top {
         width: 100%;
         display: flex;
@@ -538,7 +542,7 @@ footer {
         margin: 0 auto 0 0;
     }
 
-    /* main bottom section */
+    /* MAIN BOTTOM */
     .main-bottom {
         flex-direction: row;
         row-gap: initial;
@@ -580,6 +584,7 @@ footer {
     .main-bottom-text p {
         padding-right: 4em;
     }
+    /* END OF MAIN */
 
     /* FOOTER */
     footer {
