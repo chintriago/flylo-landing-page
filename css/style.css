@@ -49,8 +49,8 @@ li:hover {
     filter: brightness(2);
 }
 
-i:active,
-i:hover {
+.footer-3 ul li:active,
+.footer-3 ul li:hover {
     outline: 1px solid var(--bright-blue);
     filter: brightness(2);
 }
@@ -369,10 +369,11 @@ footer {
     column-gap: 1em;
 }
 
-.fa-brands {
-    padding: .5em;
+.footer-3 ul li {
     border-radius: 50%;
     outline: 1px solid white;
+    height: 30px;
+    width: 30px; 
 }
 
 /* EXPERIMENTAL */
