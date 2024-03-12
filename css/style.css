@@ -33,8 +33,26 @@ li {
 
 i,
 a,
-button {
+button,
+li {
     cursor: pointer;
+}
+
+button:active,
+button:hover {
+    filter: brightness(2);
+}
+
+li:active,
+li:hover {
+    color: var(--bright-blue);
+    filter: brightness(2);
+}
+
+i:active,
+i:hover {
+    outline: 1px solid var(--bright-blue);
+    filter: brightness(2);
 }
 
 /* UTILITY CLASSES */
@@ -43,6 +61,21 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.email-message {
+    margin-right: auto;
+    font-size: .75rem;
+    color: red;
+    padding: 0 0 .15em;
+}
+
+.remove {
+    visibility: hidden;
+}
+
+.outline-error {
+    outline: 1px solid red !important;
 }
 
 /* WEBSITE */
@@ -105,7 +138,6 @@ header nav ul {
 .hero form input {
     outline: 1px solid black;
     border-radius: 4px;
-    margin-bottom: 1em;
     font-weight: 300;
     text-align: left;
     text-indent: 25px;
@@ -260,8 +292,13 @@ main {
 }
 
 .main-bottom form {
-    row-gap: .65em;
     width: 80%;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-bottom form input {
@@ -429,13 +466,22 @@ footer {
     }
 
     .hero form {
+        width: 100%;
         flex-direction: row;
         column-gap: 1em;
-        padding-right: 3em;
+        padding-right: 0;
+    }
+
+    .input-container {
+        width: 60%;
+    }
+
+    .hero form input {
+        width: 100%;
     }
 
     .hero form button {
-        width: 70%;
+        width: 40%;
     }
 
     .bg-curve {
@@ -506,10 +552,16 @@ footer {
 
     .main-bottom form {
         padding: 1em;
+        row-gap: 0;
+    }
+
+    .input-container {
+        width: 100%;
     }
 
     .main-bottom form input {
         padding: .15em;
+        max-width: 600px;
     }
 
     .main-bottom form button {
@@ -527,6 +579,7 @@ footer {
     .main-bottom-text p {
         padding-right: 4em;
     }
+
     /* FOOTER */
     footer {
         flex-direction: row;
