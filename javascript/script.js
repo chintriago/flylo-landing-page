@@ -12,7 +12,7 @@ heroBtn.addEventListener('click', function (event) {
     if (inputValue.match(emailCheck)) {
         heroInput.classList.remove('outline-error');
         heroEmailError.classList.add('remove');
-        alert('email successfully submitted!');
+        alert('Email successfully submitted!');
     } else {
         event.preventDefault();
         heroInput.classList.add('outline-error');
@@ -33,7 +33,7 @@ mainBtn.addEventListener('click', function (event) {
     if (inputValue.match(emailCheck)) {
         mainInput.classList.remove('outline-error');
         mainEmailError.classList.add('remove');
-        alert('email successfully submitted!');
+        alert('Email successfully submitted!');
     } else {
         event.preventDefault();
         mainEmailError.style.color = 'white';
