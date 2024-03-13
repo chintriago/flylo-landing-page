@@ -13,7 +13,6 @@
 }
 
 body {
-    min-height: 100vh;
     min-width: 320px;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -35,7 +34,8 @@ li {
 i,
 a,
 button,
-li {
+li, 
+.link-container {
     cursor: pointer;
 }
 
@@ -54,6 +54,10 @@ li:hover {
 .footer-3 ul li:hover {
     outline: 1px solid var(--bright-blue);
     filter: brightness(2);
+}
+
+.link-container a:hover, .link-container a:active,.link-container:hover, .link-container:active {
+    filter: brightness(1.1);
 }
 
 /* UTILITY CLASSES */
@@ -215,7 +219,7 @@ main {
 
 .link-container {
     margin-bottom: 2em;
-    padding-bottom: .25em;
+    padding-bottom: .05em;
     border-bottom: 1px solid var(--moderate-cyan);
 }
 
@@ -476,15 +480,11 @@ footer {
     }
 
     .input-container {
-        width: 60%;
-    }
-
-    .hero form input {
-        width: 100%;
+        /* width: 50%; */
     }
 
     .hero form button {
-        width: 40%;
+        width: 60%;
     }
     /* END OF HEADER */
 
