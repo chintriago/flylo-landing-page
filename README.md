@@ -24,5 +24,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/flylo-landing-page-with-htmlcssjs-pYpM_XTwUQ]
 - Live Site URL: [https://chintriago.github.io/flylo-landing-page/]
